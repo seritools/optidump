@@ -9,11 +9,12 @@ Firmwares are based on the latest Liggy/Dee's
 [github](https://github.com/Liggy/binflash)) firmware releases with Riplock removed, set to RPC1,
 and bitsetting enabled.
 
-| Model           | Patch V. | Based on                    | Notes     | Reported Vendor/Name       | Rep. FW Version | Rep. Vendor String     |
-|-----------------|----------|-----------------------------|-----------|----------------------------|-----------------|------------------------|
-| ND-3520A (PATA) | SE01     | 3.07 (3.07bt_rpc1 LiggyDee) | [^pregap] | `_NEC    DVD_RW ND-3520AW` | `3.07`          | `seri-01 BT-LIGGY`     |
-| AD-7173A (PATA) | SE01     | 1.04 (1.04bt_rpc1 LiggyDee) | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`          | `seri-01    BT-LIGGY`  |
-| AD-7290H (SATA) | SE02     | 1h44 (1h44_rpc1 LiggyDee)   | [^serial] | `hp      DVD RW AD-7290H5` | `SE02`          | `Feb17'12\[serial]`    |
+| Model           | Patch V. | Based on                    | Notes     | Reported Vendor/Name       | Rep. FW Ver | Rep. Vendor String     | Verified by  |
+|-----------------|----------|-----------------------------|-----------|----------------------------|-------------|------------------------|--------------|
+| ND-3520A (PATA) | SE01     | 3.07 (3.07bt_rpc1 LiggyDee) | [^pregap] | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | seri         |
+| ND-4551A (PATA) | SE01     | 1.09 (1.09bt_rpc1 LiggyDee) |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl       |
+| AD-7173A (PATA) | SE01     | 1.04 (1.04bt_rpc1 LiggyDee) | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-01    BT-LIGGY`  | seri         |
+| AD-7290H (SATA) | SE02     | 1h44 (1h44_rpc1 LiggyDee)   | [^serial] | `hp      DVD RW AD-7290H5` | `SE02`      | `Feb17'12\[serial]`    | Morlit, seri |
 
 [^dma]: Drive has a bug where firmware updates don't work if DMA is enabled. Use PIO mode to update
     firmware.
@@ -23,6 +24,14 @@ and bitsetting enabled.
 
 [^serial]: The drive injects its serial into the vendor string, so I instead modified the firmware
     version.
+
+## Currently unsupported drives
+
+| Model           | Patch V. | Based on                    | Notes     | Reported Vendor/Name       | Rep. FW Ver | Rep. Vendor String     | Verified by  |
+|-----------------|----------|-----------------------------|-----------|----------------------------|-------------|------------------------|--------------|
+| AD-5280S (SATA) | SE01     | 1.Z8 (1z8_rpc1 LiggyDee)    | [^ad5280] | `Optiarc DVD RW AD-5280S ` | `1.Z8`      | `seri-01`              | -            |
+
+[^ad5280]: binflash seems to fail with "Error submitting checksum" (via SpikerZ on discord)
 
 ## Download and patching
 
