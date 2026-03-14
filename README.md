@@ -14,6 +14,7 @@ and bitsetting enabled.
 | ND-3520A (PATA) | SE01     | 3.07 (3.07bt_rpc1 LiggyDee) | [^pregap] | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | seri         |
 | ND-4551A (PATA) | SE01     | 1.09 (1.09bt_rpc1 LiggyDee) |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl       |
 | AD-7173A (PATA) | SE01     | 1.04 (1.04bt_rpc1 LiggyDee) | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-01    BT-LIGGY`  | seri         |
+| AD-7250H (SATA) | SE01     | 1.D3 (1d3bt_rpc1 LiggyDee)  |           | `Optiarc DVD RW AD-7250H ` | `1.D3`      | `seri-01    BT-LIGGY`  | @NBA2K1      |
 | AD-7290H (SATA) | SE02     | 1h44 (1h44_rpc1 LiggyDee)   | [^serial] | `hp      DVD RW AD-7290H5` | `SE02`      | `Feb17'12\[serial]`    | Morlit, seri |
 
 [^dma]: Drive has a bug where firmware updates don't work if DMA is enabled. Use PIO mode to update
