@@ -9,6 +9,10 @@ Firmwares are based on the latest Liggy/Dee's
 [github](https://github.com/Liggy/binflash)) firmware releases with Riplock removed, set to RPC1,
 and bitsetting enabled.
 
+NOTE: For some models, there are multiple revisions (e.g. AD-5280S 1.01/1.G8/1.Z8). These are not
+necessarily compatible with each other, and will fail to flash. Please flash with `-v` to see full
+log output, and create an issue with that output if you run into issues.
+
 | Model           | Patch V. | Based on                    | Notes     | Reported Vendor/Name       | Rep. FW Ver | Rep. Vendor String     | Verified by  |
 |-----------------|----------|-----------------------------|-----------|----------------------------|-------------|------------------------|--------------|
 | ND-3520A (PATA) | SE01     | 3.07 (3.07bt_rpc1 LiggyDee) | [^pregap] | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | seri         |
@@ -26,19 +30,23 @@ and bitsetting enabled.
 [^serial]: The drive injects its serial into the vendor string, so I instead modified the firmware
     version.
 
-## Currently unsupported drives
+## Patched but currently unverified drives
 
-| Model           | Patch V. | Based on                    | Notes     | Reported Vendor/Name       | Rep. FW Ver | Rep. Vendor String     | Verified by  |
-|-----------------|----------|-----------------------------|-----------|----------------------------|-------------|------------------------|--------------|
-| AD-5280S (SATA) | SE01     | 1.Z8 (1z8_rpc1 LiggyDee)    | [^ad5280] | `Optiarc DVD RW AD-5280S ` | `1.Z8`      | `seri-01`              | -            |
+| Model           | Patch V. | Based on                    | Notes      | Reported Vendor/Name       | Rep. FW Ver | Rep. Vendor String     | Verified by  |
+|-----------------|----------|-----------------------------|------------|----------------------------|-------------|------------------------|--------------|
+| AD-5170A (PATA) | SE01     | 1.Gq (1gqbt_rpc1 LiggyDee)  | Duplicator | `Optiarc DVD RW AD-5170A ` | `1.Gq`      | `seri-01`              | -            |
+| AD-5280S (SATA) | SE01     | 1.Z8 (1z8_rpc1 LiggyDee)    | 1.Z ver    | `Optiarc DVD RW AD-5280S ` | `1.Z8`      | `seri-01`              | -            |
 
-[^ad5280]: binflash seems to fail with "Error submitting checksum" (via SpikerZ on discord)
+The AD-5170A is being tested by @superg, but firmwares `1.Gx` are for a different revision,
+"AD-5170A for Duplicators". I accidentally patched that one first, so I'm providing it for good
+measure, but it is not verified currently. If you've got one, please try it and let me know how it
+goes!
 
 ## Download and patching
 
 Downloads: <https://archive.org/details/optidump-fw>
 
-Use [binflash](https://github.com/Liggy/binflash) to flash.
+Use [binflash](https://github.com/Liggy/binflash) to flash. Please always use the `-v` flag.
 
 ## More drives
 
