@@ -15,9 +15,10 @@ log output, and create an issue with that output if you run into issues.
 
 | Model           | Patch V. | Based on                    | Notes     | Reported Vendor/Name       | Rep. FW Ver | Rep. Vendor String     | Verified by  |
 |-----------------|----------|-----------------------------|-----------|----------------------------|-------------|------------------------|--------------|
-| ND-3520A (PATA) | SE01     | 3.07 (3.07bt_rpc1 LiggyDee) | [^pregap] | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | seri         |
-| ND-4551A (PATA) | SE01     | 1.09 (1.09bt_rpc1 LiggyDee) |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl       |
-| AD-7173A (PATA) | SE01     | 1.04 (1.04bt_rpc1 LiggyDee) | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-01    BT-LIGGY`  | seri         |
+| ND-3520A (PATA) | SE01     | 3.07 (307bt_rpc1 LiggyDee)  | [^pregap] | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | seri         |
+| ND-4551A (PATA) | SE01     | 1.09 (109bt_rpc1 LiggyDee)  |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl       |
+| AD-5280S (SATA) | SE01     | 1.01 (101bt_rpc1 LiggyDee)  |           | `Optiarc DVD RW AD-5280S ` | `1.01`      | `seri-01    BT-LIGGY`  | @SpikerZ     |
+| AD-7173A (PATA) | SE01     | 1.04 (104bt_rpc1 LiggyDee)  | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-01    BT-LIGGY`  | seri         |
 | AD-7250H (SATA) | SE01     | 1.D3 (1d3bt_rpc1 LiggyDee)  |           | `Optiarc DVD RW AD-7250H ` | `1.D3`      | `seri-01    BT-LIGGY`  | @NBA2K1      |
 | AD-7290H (SATA) | SE02     | 1h44 (1h44_rpc1 LiggyDee)   | [^serial] | `hp      DVD RW AD-7290H5` | `SE02`      | `Feb17'12\[serial]`    | Morlit, seri |
 
