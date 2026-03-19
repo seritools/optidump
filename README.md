@@ -17,6 +17,7 @@ log output, and create an issue with that output if you run into issues.
 |-----------------|----------|---------------------|-----------|----------------------------|-------------|------------------------|--------------------|
 | ND-3520A (PATA) | SE01     | 3.07 (307bt_rpc1)   | [^pregap] | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | @seritools         |
 | ND-4551A (PATA) | SE01     | 1.09 (109bt_rpc1)   |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl             |
+| AD-5200A (PATA) | SE01     | 1.09 (109bt_rpc1)   | [^5200a]  | `Optiarc DVD RW AD-5200A ` | `1.09`      | `seri-01    BT-LIGGY`  | SpikerZ            |
 | AD-5280S (SATA) | SE01     | 1.01 (101bt_rpc1)   |           | `Optiarc DVD RW AD-5280S ` | `1.01`      | `seri-01    BT-LIGGY`  | SpikerZ            |
 | AD-7173A (PATA) | SE01     | 1.04 (104bt_rpc1)   | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-01    BT-LIGGY`  | @seritools         |
 | AD-7241S (SATA) | SE01     | 1.61 (161bt_rpc1)   | [^dru875] | `SONY    DVD RW DRU-875S ` | `1.61`      | `seri-01    BT-LIGGY`  | @APOLLONS          |
@@ -31,6 +32,8 @@ log output, and create an issue with that output if you run into issues.
 [^serial]: The drive injects its serial into the vendor string, so I instead modified the firmware
     version.
 [^dru875]: also known as Sony DRU-875S
+[^5200a]: Has a weird double firmware file. I only patched the "second" half. Please raise an issue
+    if you don't see the `seri-01` in the vendor string after flashing.
 
 ## Patched but currently unverified drives
 
