@@ -73,3 +73,5 @@ The drives currently fail or struggle with:
 - Weirdly mastered discs (via Morlit: <http://redump.org/disc/79065/>)
 - Hexalock protected discs (via Morlit)
 - Codelok/Copylock protected discs (via Morlit and me)
+- Reading CD-Text over 0x800 (2048) bytes in length. Will return the correct length, but zeroed out
+  after 0x800. (via @MarvinOl on AD-7590A; might be disc-specific)
