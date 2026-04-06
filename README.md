@@ -39,13 +39,12 @@ log output, and create an issue with that output if you run into issues.
 
 | Model           | Patch V. | FW (Liggy/Dee name) | Notes      | Reported Vendor/Name       | Rep. FW Ver | Rep. Vendor String     | Verified by  |
 |-----------------|----------|---------------------|------------|----------------------------|-------------|------------------------|--------------|
+| AD-5170A (PATA) | SE01     | 1.H1 (1h1bt_rpc1)   | [^dma]     | `Optiarc DVD RW AD-5170A ` | `1.H1`      | `seri-01    BT-LIGGY`  | -            |
 | AD-5170A (PATA) | SE01     | 1.Gq (1gqbt_rpc1)   | Duplicator | `Optiarc DVD RW AD-5170A ` | `1.Gq`      | `seri-01`              | -            |
 | AD-5280S (SATA) | SE01     | 1.Z8 (1z8_rpc1)     | 1.Z ver    | `Optiarc DVD RW AD-5280S ` | `1.Z8`      | `seri-01`              | -            |
 
-The AD-5170A is being tested by @superg, but firmwares `1.Gx` are for a different revision,
-"AD-5170A for Duplicators". I accidentally patched that one first, so I'm providing it for good
-measure, but it is not verified currently. If you've got one, please try it and let me know how it
-goes!
+These firmwares were patched but couldn't be tested yet. If you've got one of these drives, please
+contact me to try it out and let me know how it goes!
 
 ## Download and patching
 
