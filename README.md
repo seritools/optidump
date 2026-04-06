@@ -19,7 +19,7 @@ log output, and create an issue with that output if you run into issues.
 | ND-4551A (PATA) | SE01     | 1.09 (109bt_rpc1)   |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl             |
 | AD-5200A (PATA) | SE01     | 1.09 (109bt_rpc1)   | [^5200a]  | `Optiarc DVD RW AD-5200A ` | `1.09`      | `seri-01    BT-LIGGY`  | SpikerZ            |
 | AD-5280S (SATA) | SE01     | 1.01 (101bt_rpc1)   |           | `Optiarc DVD RW AD-5280S ` | `1.01`      | `seri-01    BT-LIGGY`  | SpikerZ            |
-| AD-7173A (PATA) | SE01     | 1.04 (104bt_rpc1)   | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-01    BT-LIGGY`  | @seritools         |
+| AD-7173A (PATA) | SE01     | 1.04 (104bt_rpc1)   | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-v1    BT-LIGGY`  | @seritools         |
 | AD-7241S (SATA) | SE01     | 1.61 (161bt_rpc1)   | [^dru875] | `SONY    DVD RW DRU-875S ` | `1.61`      | `seri-01    BT-LIGGY`  | @APOLLONS          |
 | AD-7250H (SATA) | SE01     | 1.D3 (1d3bt_rpc1)   |           | `Optiarc DVD RW AD-7250H ` | `1.D3`      | `seri-01    BT-LIGGY`  | @NBA2K1            |
 | AD-7290H (SATA) | SE02     | 1h44 (1h44_rpc1)    | [^serial] | `hp      DVD RW AD-7290H5` | `SE02`      | `Feb17'12\[serial]`    | Morlit, @seritools |
