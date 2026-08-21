@@ -18,6 +18,7 @@ log output, and create an issue with that output if you run into issues.
 | ND-3520A (PATA) | SE01     | 3.07 (307bt_rpc1)   |           | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | @seritools         |
 | ND-4551A (PATA) | SE01     | 1.09 (109bt_rpc1)   |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl             |
 | AD-5200A (PATA) | SE01     | 1.09 (109bt_rpc1)   | [^5200a]  | `Optiarc DVD RW AD-5200A ` | `1.09`      | `seri-01    BT-LIGGY`  | SpikerZ            |
+| AD-5240S (SATA) | SE01     | 1.03 (103bt_rpc1)   |           | `Optiarc DVD RW AD-5240S ` | `1.03`      | `seri-01    BT-LIGGY`  | @toreopp           |
 | AD-5280S (SATA) | SE01     | 1.01 (101bt_rpc1)   |           | `Optiarc DVD RW AD-5280S ` | `1.01`      | `seri-01    BT-LIGGY`  | SpikerZ            |
 | AD-7173A (PATA) | SE01     | 1.04 (104bt_rpc1)   | [^dma]    | `Optiarc DVD RW AD-7173A ` | `1-04`      | `seri-v1    BT-LIGGY`  | @seritools         |
 | AD-7203A (PATA) | SE01     | 1.09 (109bt_rpc1)   |           | `Optiarc DVD RW AD-7203A ` | `1.09`      | `seri-01    BT-LIGGY`  | @seritools         |
