@@ -28,6 +28,7 @@ log output, and create an issue with that output if you run into issues.
 | AD-7250H (SATA) | SE01     | 1.D3 (1d3bt_rpc1)   |           | `Optiarc DVD RW AD-7250H ` | `1.D3`      | `seri-01    BT-LIGGY`  | @NBA2K1            |
 | AD-7290H (SATA) | SE02     | 1h44 (1h44_rpc1)    | [^serial] | `hp      DVD RW AD-7290H5` | `SE02`      | `Feb17'12\[serial]`    | Morlit, @seritools |
 | AD-7590A (PATA) | SE01     | 1.V1 (1v1bt_rpc1)   |           | `Optiarc DVD RW AD-7590A ` | `1.V1`      | `seri-01    BT-LIGGY`  | @MarvinOl          |
+| AD-7910A (PATA) | SE01     | 1.D1 (1d1bt_rpc1)   |           | `Optiarc DVD RW AD-7910A ` | `1.D1`      | `seri-01    BT-LIGGY`  | @madsl/Tankakern   |
 
 [^4551a]: 3550A and 4550A are hw-identical to 4551A, but you have to update their bootcode. See
     [this page](https://andreyex.narod.ru/nec4551A.htm) for a guide. Verified in
