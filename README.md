@@ -16,7 +16,9 @@ log output, and create an issue with that output if you run into issues.
 | Model           | Patch V. | FW (Liggy/Dee name) | Notes     | Reported Vendor/Name       | Rep. FW Ver | Patched vendor string  | Verified by        |
 |-----------------|----------|---------------------|-----------|----------------------------|-------------|------------------------|--------------------|
 | ND-3520A (PATA) | SE01     | 3.07 (307bt_rpc1)   |           | `_NEC    DVD_RW ND-3520AW` | `3.07`      | `seri-01 BT-LIGGY`     | @seritools         |
-| ND-4551A (PATA) | SE01     | 1.09 (109bt_rpc1)   |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl             |
+| ND-3550A (PATA) | ↓        | ↓ see note!         | [^4551a]  | ↓                          | ↓           | ↓                      | ↓                  |
+| ND-4550A (PATA) | ↓        | ↓ see note!         | [^4551a]  | ↓                          | ↓           | ↓                      | ↓                  |
+| ND-4551A (PATA) | SE01     | 1.09 (109bt_rpc1)   |           | `_NEC    DVD_RW ND-4551A ` | `1-09`      | `seri-01 BT-LIGGY`     | @madsl, @toreopp   |
 | AD-5200A (PATA) | SE01     | 1.09 (109bt_rpc1)   | [^5200a]  | `Optiarc DVD RW AD-5200A ` | `1.09`      | `seri-01    BT-LIGGY`  | SpikerZ            |
 | AD-5240S (SATA) | SE01     | 1.03 (103bt_rpc1)   |           | `Optiarc DVD RW AD-5240S ` | `1.03`      | `seri-01    BT-LIGGY`  | @toreopp           |
 | AD-5280S (SATA) | SE01     | 1.01 (101bt_rpc1)   |           | `Optiarc DVD RW AD-5280S ` | `1.01`      | `seri-01    BT-LIGGY`  | SpikerZ            |
@@ -27,6 +29,9 @@ log output, and create an issue with that output if you run into issues.
 | AD-7290H (SATA) | SE02     | 1h44 (1h44_rpc1)    | [^serial] | `hp      DVD RW AD-7290H5` | `SE02`      | `Feb17'12\[serial]`    | Morlit, @seritools |
 | AD-7590A (PATA) | SE01     | 1.V1 (1v1bt_rpc1)   |           | `Optiarc DVD RW AD-7590A ` | `1.V1`      | `seri-01    BT-LIGGY`  | @MarvinOl          |
 
+[^4551a]: 3550A and 4550A are hw-identical to 4551A, but you have to update their bootcode. See
+    [this page](https://andreyex.narod.ru/nec4551A.htm) for a guide. Verified in
+    [#10](https://github.com/seritools/optidump/issues/10#issuecomment-5388288005).
 [^dma]: Drive has a bug where firmware updates don't work if DMA is enabled. Use PIO mode to update
     firmware.
 [^serial]: The drive injects its serial into the vendor string, so I instead modified the firmware
